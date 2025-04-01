@@ -11,11 +11,11 @@ def create_app():
     app.config.from_object(Config)
     db.init_app(app)
 
-    # from .models import Usuario
+    from .models import Usuario
 
     # with app.app_context():
     #     db.create_all()
-        
+    
     migrate.init_app(app, db)
     
     # Importa e registra as rotas

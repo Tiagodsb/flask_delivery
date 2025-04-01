@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}Registrar-se{% endblock %}
+
+{% block content %}
+    <h2>Criar minha conta</h2>
+    <form method="post" action="/criar_conta">
+        <div>
+            <label for="telefone">Número</label>
+            <input name="telefone" id="telefone" type="tel">    
+        </div>
+        <div>
+            <label for="nome">Seu nome</label>
+            <input name="nome" id="nome" type="text">    
+        </div>
+        <input type="submit" value="Concluir">
+    </form>
+{% endblock %}
